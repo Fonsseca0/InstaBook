@@ -6,45 +6,41 @@
     <title>InstaBook</title>
     <link rel="stylesheet" href="ts.css">
 </head>
-<body onload="mostrarCaixa()">
-    <header>
-        <div class="navbar">
-            <img src="home-removebg-preview.png" alt="Início" class="icone">
-            <img class="navmais" id="btnMais" src="mais.png" alt="">
-        </div>
 
+<header class="pageHeader">
+    <img src="home-removebg-preview.png" alt="Início" class="icone">
+    <img class="navmais" id="btnMais" src="mais.png" alt="">
+</header>
+<body onload="mostrarCaixa()">
+    <aside>
         <div class="stories">
-            <img src="arr.png" alt="" class="story">
-            <img src="OIP.png" alt="" class="storyBF">
-            <img src="123.png" alt="" class="story">
-            <img src="tm.png" alt="" class="storyBF">
-            <img src="h.png" alt="" class="story">
+            <img src="arr.png" alt="" class="story"><br>
+            <img src="OIP.png" alt="" class="storyBF"><br>
+            <img src="123.png" alt="" class="story"><br>
+            <img src="tm.png" alt="" class="storyBF"><br>
+            <img src="h.png" alt="" class="story"><br>
         </div>
-    </header>
+    </aside>
     <main>
-        <div class="cxb">
             <div class="feed">
-                <div class="post">
-                    <img src="selfie-en-famille-8.png" alt="">
-                </div>
-                <div>
-                    <img class="like" src="like.png" alt="">
-                </div>
-                <div class="post">
-                    <img src="R.jpg" alt="">
-                </div>
-                <div>
-                    <img class="like" src="like.png" alt="">
-                </div>
-                <div class="post">
-                    <img src="paris.png" alt="">
-                </div>
-                <div>
-                    <img class="like" src="like.png" alt="">
+                <div class="postBase">
+                    <div class="postHeader">
+                        <img src="arr.png" alt="">NomeUltraFoda 123
+                    </div>
+                    <div class="postImage">
+                        <img src="selfie-en-famille-8.png" alt="">
+                    </div>
+                    <div class="postFooter">
+                        <div class="postLikes">
+                           <img src="like.png" alt=""> -35 (final)
+                        </div>
+                        <div class="postLikes">
+                           <img src="dislike.png" alt=""> 2899
+                        </div>
+                    </div>
                 </div>
                 <!-- adicione quantos posts quiser -->
             </div>
-        </div>
     </main>
 
     <footer>
