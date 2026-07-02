@@ -110,3 +110,13 @@
 .requisitos li:not(.valido)::before {
     content: "✘ ";
 }
+
+.gg {
+    display: flex;
+    justify-content: center;
+}
+
+.insta {
+    height: 500px;
+    width: 500px;
+}
