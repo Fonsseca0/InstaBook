@@ -89,5 +89,6 @@ function validarLogin() {
         return false;
     }
     
+    window.location.href = "ts.html"; // troque pelo nome do seu arquivo
     return true;
 }
