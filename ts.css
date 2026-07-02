@@ -1,0 +1,212 @@
+.story {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 4px;
+    display: flex;
+    text-align: center;
+    background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62929,
+        #6b0808,
+        #9b460e
+    );
+}
+
+.storyBF {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 4px;
+    display: flex;
+    text-align: center;
+    background: linear-gradient(
+        45deg,
+        #6bb922,
+        #6bb922,
+        #6bb922,
+        #6bb922
+    );
+}
+
+.navbar {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* define uma altura */
+
+    display: flex;
+    display: flex;
+    justify-content: center; /* mantém o ícone home centralizado */
+    align-items: center;
+    position: relative; /* só pra context, mesmo sendo fixed */
+
+    background: rgb(216, 216, 216);
+    border-top: 5px solid #ff5e00;
+}
+
+.navmais {
+    position: absolute;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.stories {
+    margin-top: 60px; /* maior que a altura da navbar */
+    position: relative;
+    z-index: 5;
+}
+
+.icone {
+    width: 30px;
+    height: 30px;
+}
+
+.cxb {
+    background-color: #ffffff;
+    width: 600px;
+    height: 700px;
+    padding: 20px;
+    border-radius: 15px;
+    overflow-y: scroll; /* em vez de auto, força a barra aparecer */
+    -webkit-overflow-scrolling: touch; /* corrige scroll em Safari/iOS/trackpad */
+    position: fixed;
+    z-index: 5; /* acima do conteúdo normal, mas abaixo da navbar (z-index: 10) */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* removido o display:flex que centralizava um item só */
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* espaço entre os posts */
+}
+
+.post {
+    width: 100%;
+    max-width: 400px;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.like {
+    width: 50px;
+    height: 50px;
+}
+
+.cxbb {
+    background-color: #ffffff;
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column; /* organiza os filhos em coluna */
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20; /* acima da navbar (10) e do feed (5) */
+}
+
+.bt {
+    background-color: orange;
+    width: 100px;
+    height: 50px;
+}
+
+.ct {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cr {
+    text-align: center;
+}
+
+.rr {
+    background-color: orange; /* Cor de fundo branca */
+    width: 550px; /* Largura da caixa */
+    height: 100px; /* Altura da caixa */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    color: white;
+    text-shadow: 0 10px 14px #000000;
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 15; /* abaixo da caixa (20), acima do feed (5) e navbar (10) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 15;
+    display: none; /* começa escondida */
+    justify-content: center;
+    align-items: center;
+}
+
+.post-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+.opcaoPost {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border-color 0.2s, transform 0.2s;
+}
+.opcaoPost:hover {
+    transform: scale(1.05);
+}
+.opcaoPost.selecionada {
+    border-color: orange;
+}
+.mensagemErro {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}

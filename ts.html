@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaBook</title>
+    <link rel="stylesheet" href="ts.css">
+</head>
+<body onload="mostrarCaixa()">
+    <header>
+        <div class="navbar">
+            <img src="home-removebg-preview.png" alt="Início" class="icone">
+            <img class="navmais" id="btnMais" src="mais.png" alt="">
+        </div>
+
+        <div class="stories">
+            <img src="arr.png" alt="" class="story">
+            <img src="OIP.png" alt="" class="storyBF">
+            <img src="123.png" alt="" class="story">
+            <img src="tm.png" alt="" class="storyBF">
+            <img src="h.png" alt="" class="story">
+        </div>
+    </header>
+    <main>
+        <div class="cxb">
+            <div class="feed">
+                <div class="post">
+                    <img src="selfie-en-famille-8.png" alt="">
+                </div>
+                <div>
+                    <img class="like" src="like.png" alt="">
+                </div>
+                <div class="post">
+                    <img src="R.jpg" alt="">
+                </div>
+                <div>
+                    <img class="like" src="like.png" alt="">
+                </div>
+                <div class="post">
+                    <img src="paris.png" alt="">
+                </div>
+                <div>
+                    <img class="like" src="like.png" alt="">
+                </div>
+                <!-- adicione quantos posts quiser -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="overlay" id="overlay">
+            <section class="cxbb" id="bb">
+                <div>
+                    <div class="rr">
+                        <h1 class="cr">COMECAR</h1>
+                    </div>
+
+                    <div>
+                    </div>
+                </div>
+
+                <div class="ct">
+                    <button class="bt" onclick="baby()">COMECAR</button>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <div class="overlas" id="overlayMais">
+    <section class="cxbb" id="boxMais">
+        <div>
+            <div class="rr">
+                <p class="cr"><b>FAZER POSTAGEM:</b> Antes de postar uma imagem, pense na sua segurança e na dos outros. Evite publicar fotos com dados pessoais, como cartões, documentos, senhas ou endereços, além de conteúdos ofensivos ou inadequados. Sempre verifique se a imagem é segura e apropriada antes de compartilhá-la.</p>
+            </div>
+        </div>
+        <div class="post-options" id="postOptions">
+        <img src="paris.png" alt="Opção 1" class="opcaoPost" data-valido="true">
+        <img src="R.jpg" alt="Opção 2" class="opcaoPost" data-valido="false">
+        <img src="123.png" alt="Opção 3" class="opcaoPost" data-valido="false">
+        <img src="h.png" alt="Opção 4" class="opcaoPost" data-valido="false">
+        </div>
+        <p id="mensagemErro" class="mensagemErro">Conteúdo Inapropriado</p>
+    </section>
+</div>
+
+    <script src="ts.js"></script>
+</body>
+</html>
