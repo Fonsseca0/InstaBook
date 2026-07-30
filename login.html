@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaBook</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="overlay" id="overlay">
+            <section class="cxbb" id="bb">
+                <div>
+                    <div class="rr">
+                        <h1 class="cr"></h1>
+                    </div>
+
+                    <div>
+                    </div>
+                </div>
+
+                <div class="ct">
+                    <button class="bt" onclick="baby()">COMEÇAR</button>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <div class="campos-login">
+            <input type="text" id="usuario" placeholder="Nome de usuário" class="input-login">
+            <input type="password" id="senha" placeholder="Senha" class="input-login">
+            
+            <div class="forca-senha-container">
+                <div class="forca-senha-barra" id="forcaBarra"></div>
+            </div>
+            <p id="forcaTexto" class="forca-texto">Digite uma senha</p>
+            
+            <ul class="requisitos" id="listaRequisitos">
+                <li id="reqTamanho">Pelo menos 8 caracteres</li>
+                <li id="reqMaiuscula">Uma letra maiúscula</li>
+                <li id="reqMinuscula">Uma letra minúscula</li>
+                <li id="reqNumero">Um número</li>
+                <li id="reqEspecial">Um caractere especial (!@#$%...)</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <button class="bt" onclick="if(validarLogin()){ baby(); }">COMECAR</button>
+    </footer>
+<script src="login.js"></script>
+</body>
+</html>
