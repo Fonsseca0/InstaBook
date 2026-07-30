@@ -27,20 +27,23 @@
                 <div class="post">
                     <img src="selfie-en-famille-8.png" alt="">
                 </div>
-                <div>
-                    <img class="like" src="like.png" alt="">
+                <div class="like-container">
+                    <img class="like" src="like.png" alt="" onclick="curtir(this)">
+                    <span class="like-count">0</span>
                 </div>
                 <div class="post">
                     <img src="R.jpg" alt="">
                 </div>
-                <div>
-                    <img class="like" src="like.png" alt="">
+                <div class="like-container">
+                    <img class="like" src="like.png" alt="" onclick="curtir(this)">
+                    <span class="like-count">0</span>
                 </div>
                 <div class="post">
                     <img src="paris.png" alt="">
                 </div>
-                <div>
-                    <img class="like" src="like.png" alt="">
+                <div class="like-container">
+                    <img class="like" src="like.png" alt="" onclick="curtir(this)">
+                    <span class="like-count">0</span>
                 </div>
                 <!-- adicione quantos posts quiser -->
             </div>
@@ -52,10 +55,13 @@
             <section class="cxbb" id="bb">
                 <div>
                     <div class="rr">
-                        <h1 class="cr">COMEÇAR</h1>
+                        <h1 class="cr">Bem-vindo ao InstaBook!</h1>
                     </div>
 
                     <div>
+                        <p class="cr" style="margin-top: 15px;">
+                        Estamos felizes em ter você aqui! Antes de começar, vamos te mostrar rapidinho como postar seus stories e o que acontece com o que você compartilha.
+                        </p>
                     </div>
                 </div>
 
@@ -73,13 +79,24 @@
             </div>
         </div>
         <div class="post-options" id="postOptions">
-        <img src="tumblr_oz4rzasbQB1wzr5lmo1_1280.png" alt="Opção 1" class="opcaoPost" data-valido="true">
-        <img src="bidikan-seorang-pengusaha-muda-menggunakan-kartu-kredit-dan-laptop-di-tempat-kerja.png" alt="Opção 2" class="opcaoPost" data-valido="false">
-        <img src="723b0775-6b41-42be-91c8-79abe7d7fc78_medium.png" alt="Opção 3" class="opcaoPost" data-valido="false">
-        <img src="arma2.png" alt="Opção 4" class="opcaoPost" data-valido="false">
+        <img src="paris.png" alt="Opção 1" class="opcaoPost" data-valido="true">
+        <img src="R.jpg" alt="Opção 2" class="opcaoPost" data-valido="false">
+        <img src="123.png" alt="Opção 3" class="opcaoPost" data-valido="false">
+        <img src="h.png" alt="Opção 4" class="opcaoPost" data-valido="false">
         </div>
         <p id="mensagemErro" class="mensagemErro">Conteúdo Inapropriado</p>
     </section>
+</div>
+
+<div class="tutorial-overlay" id="tutorialOverlay">
+    <div class="balao balao-esquerda" id="balaoStories">
+        <p>Para postar um <b>story</b>, clique no ícone de "+" no canto superior esquerdo da tela! Stories são fotos ou vídeos que ficam visíveis por um tempo limitado.</p>
+        <button class="bt" onclick="proximoBalao()">OK</button>
+    </div>
+    <div class="balao balao-direita" id="balaoVisibilidade" style="display:none;">
+        <p>Lembre-se: as suas postagens também serão vistas por outras pessoas. Pense bem antes de compartilhar!</p>
+        <button class="bt" onclick="fecharTutorial()">OK</button>
+    </div>
 </div>
 
     <script src="ts.js"></script>
